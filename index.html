@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 
 
-<html>
+<html ng-app="MyFirstApp">
+<!--This stands for angular, import angular application module-->
+
+    <head>
+
+        <meta charset="utf-8">
+        <script src="angular.min.js"></script>
+        <script src="app_1.js"></script>
+        <title>First AngularJS App</title>
+
+    </head>
 
 
-<head>
+    <body>
 
-<meta charset="utf-8">
-<title>Hello Coursera!</title>
+        <h1>Look it is AngularJS!</h1>
+        <div ng-controller="MyFirstController">
+            <!--everything under here in this div is controlled by the "MyFirstController"-->
+            <input type=""text ng-model="name">
+            My input is: {{name}}
+        </div>
 
-</head>
-
-
-<body>
-
-<h1>Hello Coursera, welcome students! I am so excited to learn!</h1>
-
-</body>
+    </body>
 
 
 </html>
